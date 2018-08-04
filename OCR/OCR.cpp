@@ -344,25 +344,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	free(pimageTemp);
 	free(buf);
 	free(buf1);
-#if 0
 
-	ofstream outfile;
-
-	outfile.open(filename.c_str(), ios::binary);
-
-	if(!outfile)
-	{
-		printf("Cannot Load file.\n");
-		return 0;
-
-	}
-
-
-	for (int r = 0; r < temp.rows; r++)
-		outfile.write(reinterpret_cast<const char*>(temp.ptr(r)), temp.cols*temp.elemSize());
-
-	printf("write to file ok!\n");
-#endif
 
 	return 1;
 	
